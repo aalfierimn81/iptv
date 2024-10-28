@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTVLCOPT:http-user-agent=HbbTV/1.6.1
+http://live.sloode.com:1935/mediatv/live/playlist.m3u8

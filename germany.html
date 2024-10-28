@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  width: calc(600px / 3);
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.responsive {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  max-height: auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h1>germany</h1></div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <a href="germany.html"><li>Germany</li></a>
+      <a href="italy.html"><li>Italy</li></a>
+      <a href="zz_news_en.html"><li>zz_news_en</li></a>
+      <li><form id = "spegniForm" action="spegni.php" method="post"> <button class="button" type="submit" class="button"  name="submit">Spegni</button> </form></li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-3 menu">
+	<div style="overflow-x: auto;">
+	  <table>
+		<tr>
+		  <th>Channel</th>
+		  <th>Immage</th>
+		  <th>Button</th>
+		</tr>
+		
+<body> 
+<table border="1"> 
+<tr> 
+<td>Das Erste</td><td> <img src="germany/channels/1/DasErste.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/1/Das Erste.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>ZDF</td><td> <img src="germany/channels/2/ZDF.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/2/ZDF.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>3sat</td><td> <img src="germany/channels/3/3sat.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/3/3sat.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>ARD Alpha</td><td> <img src="germany/channels/4/ARDAlpha.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/4/ARD Alpha.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>ARTE</td><td> <img src="germany/channels/5/ARTE.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/5/ARTE.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Deluxe Music</td><td> <img src="germany/channels/6/DeluxeMusic.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/6/Deluxe Music.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Schlager Deluxe</td><td> <img src="germany/channels/7/SchlagerDeluxe.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/7/Schlager Deluxe.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Deluxe Lounge HD</td><td> <img src="germany/channels/8/DeluxeLoungeHD.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/8/Deluxe Lounge HD.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Euronews Deutsch</td><td> <img src="germany/channels/9/EuronewsDeutsch.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/9/Euronews Deutsch.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>KiKa</td><td> <img src="germany/channels/10/KiKa.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/10/KiKa.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>MTV Germany</td><td> <img src="germany/channels/11/MTVGermany.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/11/MTV Germany.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Nick</td><td> <img src="germany/channels/12/Nick.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/12/Nick.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>ONE</td><td> <img src="germany/channels/13/ONE.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/13/ONE.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Phoenix</td><td> <img src="germany/channels/14/Phoenix.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/14/Phoenix.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tagesschau24</td><td> <img src="germany/channels/15/Tagesschau24.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/15/Tagesschau24.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Welt</td><td> <img src="germany/channels/16/Welt.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/16/Welt.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>ZDFinfo</td><td> <img src="germany/channels/17/ZDFinfo.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/17/ZDFinfo.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>ZDFneo</td><td> <img src="germany/channels/18/ZDFneo.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/18/ZDFneo.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>BR Nord</td><td> <img src="germany/channels/19/BRNord.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/19/BR Nord.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>BR S d</td><td> <img src="germany/channels/20/BRSd.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/20/BR S d.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>HR</td><td> <img src="germany/channels/21/HR.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/21/HR.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>MDR Sachsen</td><td> <img src="germany/channels/22/MDRSachsen.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/22/MDR Sachsen.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>MDR Sachsen-Anhalt</td><td> <img src="germany/channels/23/MDRSachsen-Anhalt.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/23/MDR Sachsen-Anhalt.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>MDR Th ringen</td><td> <img src="germany/channels/24/MDRThringen.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/24/MDR Th ringen.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>NDR Hamburg</td><td> <img src="germany/channels/25/NDRHamburg.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/25/NDR Hamburg.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>NDR Mecklenburg-Vorpommern</td><td> <img src="germany/channels/26/NDRMecklenburg-Vorpommern.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/26/NDR Mecklenburg-Vorpommern.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>NDR Niedersachsen</td><td> <img src="germany/channels/27/NDRNiedersachsen.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/27/NDR Niedersachsen.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>NDR Schleswig-Holstein</td><td> <img src="germany/channels/28/NDRSchleswig-Holstein.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/28/NDR Schleswig-Holstein.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Bremen</td><td> <img src="germany/channels/29/RadioBremen.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/29/Radio Bremen.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RBB Berlin</td><td> <img src="germany/channels/30/RBBBerlin.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/30/RBB Berlin.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RBB Brandenburg</td><td> <img src="germany/channels/31/RBBBrandenburg.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/31/RBB Brandenburg.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>SR</td><td> <img src="germany/channels/32/SR.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/32/SR.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>SWR Baden-W rttemberg</td><td> <img src="germany/channels/33/SWRBaden-Wrttemberg.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/33/SWR Baden-W rttemberg.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>SWR Rheinland-Pfalz</td><td> <img src="germany/channels/34/SWRRheinland-Pfalz.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/34/SWR Rheinland-Pfalz.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>WDR</td><td> <img src="germany/channels/35/WDR.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/35/WDR.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>DW Deutsch</td><td> <img src="germany/channels/36/DWDeutsch.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/36/DW Deutsch.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>DW Deutsch+</td><td> <img src="germany/channels/37/DWDeutsch+.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/37/DW Deutsch+.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>NDR International</td><td> <img src="germany/channels/38/NDRInternational.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/38/NDR International.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Peer TV S dtirol</td><td> <img src="germany/channels/39/PeerTVSdtirol.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="germany/channels/39/Peer TV S dtirol.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+	  </table>
+	</div>
+   </div>
+</div>
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>

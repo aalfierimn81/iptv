@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTVLCOPT:http-user-agent=HbbTV/1.6.1
+https://cdn80-ger.azotosolutions.com:8443/cdnedge3/smil:live3.smil/playlist.m3u8

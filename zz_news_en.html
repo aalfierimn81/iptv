@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  width: calc(600px / 3);
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.responsive {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  max-height: auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h1>zz_news_en</h1></div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <a href="germany.html"><li>Germany</li></a>
+      <a href="italy.html"><li>Italy</li></a>
+      <a href="zz_news_en.html"><li>zz_news_en</li></a>
+      <li><form id = "spegniForm" action="spegni.php" method="post"> <button class="button" type="submit" class="button"  name="submit">Spegni</button> </form></li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-3 menu">
+	<div style="overflow-x: auto;">
+	  <table>
+		<tr>
+		  <th>Channel</th>
+		  <th>Immage</th>
+		  <th>Button</th>
+		</tr>
+		
+<body> 
+<table border="1"> 
+<tr> 
+<td>Sky News (UK)</td><td> <img src="zz_news_en/channels/1/SkyNews(UK).png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/1/Sky News (UK).m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Euronews</td><td> <img src="zz_news_en/channels/2/Euronews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/2/Euronews.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Africanews</td><td> <img src="zz_news_en/channels/3/Africanews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/3/Africanews.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>France 24</td><td> <img src="zz_news_en/channels/4/France24.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/4/France 24.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>DW</td><td> <img src="zz_news_en/channels/5/DW.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/5/DW.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Al Jazeera</td><td> <img src="zz_news_en/channels/6/AlJazeera.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/6/Al Jazeera.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>CGTN</td><td> <img src="zz_news_en/channels/7/CGTN.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/7/CGTN.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>BBC News</td><td> <img src="zz_news_en/channels/8/BBCNews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/8/BBC News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>NBC News NOW</td><td> <img src="zz_news_en/channels/9/NBCNewsNOW.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/9/NBC News NOW.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Reuters</td><td> <img src="zz_news_en/channels/10/Reuters.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/10/Reuters.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>The Guardian</td><td> <img src="zz_news_en/channels/11/TheGuardian.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/11/The Guardian.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>CBS News</td><td> <img src="zz_news_en/channels/12/CBSNews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/12/CBS News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>ABC News Live</td><td> <img src="zz_news_en/channels/13/ABCNewsLive.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/13/ABC News Live.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>LiveNOW from FOX</td><td> <img src="zz_news_en/channels/14/LiveNOWfromFOX.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/14/LiveNOW from FOX.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>CBC News Network</td><td> <img src="zz_news_en/channels/15/CBCNewsNetwork.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/15/CBC News Network.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Ticker News</td><td> <img src="zz_news_en/channels/16/TickerNews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/16/Ticker News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>India Today</td><td> <img src="zz_news_en/channels/17/IndiaToday.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/17/India Today.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Channel News Asia</td><td> <img src="zz_news_en/channels/18/ChannelNewsAsia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/18/Channel News Asia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>ABC News (AU)</td><td> <img src="zz_news_en/channels/19/ABCNews(AU).png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/19/ABC News (AU).m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>NDTV 24x7</td><td> <img src="zz_news_en/channels/20/NDTV24x7.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/20/NDTV 24x7.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TRT World</td><td> <img src="zz_news_en/channels/21/TRTWorld.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/21/TRT World.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>NHK World Japan</td><td> <img src="zz_news_en/channels/22/NHKWorldJapan.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/22/NHK World Japan.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>DD India</td><td> <img src="zz_news_en/channels/23/DDIndia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/23/DD India.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>WION</td><td> <img src="zz_news_en/channels/24/WION.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/24/WION.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Taiwan+</td><td> <img src="zz_news_en/channels/25/Taiwan+.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/25/Taiwan+.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Metro Globe Network</td><td> <img src="zz_news_en/channels/26/MetroGlobeNetwork.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/26/Metro Globe Network.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>i24 News</td><td> <img src="zz_news_en/channels/27/i24News.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/27/i24 News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Scripps News</td><td> <img src="zz_news_en/channels/28/ScrippsNews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/28/Scripps News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>USA Today</td><td> <img src="zz_news_en/channels/29/USAToday.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/29/USA Today.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TVC News</td><td> <img src="zz_news_en/channels/30/TVCNews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/30/TVC News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Channels 24</td><td> <img src="zz_news_en/channels/31/Channels24.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/31/Channels 24.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Sky News Now (AU)</td><td> <img src="zz_news_en/channels/32/SkyNewsNow(AU).png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/32/Sky News Now (AU).m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Global News</td><td> <img src="zz_news_en/channels/33/GlobalNews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/33/Global News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Russia Today</td><td> <img src="zz_news_en/channels/34/RussiaToday.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/34/Russia Today.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Pluto TV News</td><td> <img src="zz_news_en/channels/35/PlutoTVNews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/35/Pluto TV News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>CNN</td><td> <img src="zz_news_en/channels/36/CNN.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/36/CNN.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>CNN International</td><td> <img src="zz_news_en/channels/37/CNNInternational.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/37/CNN International.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>GB News</td><td> <img src="zz_news_en/channels/38/GBNews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/38/GB News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TalkTV</td><td> <img src="zz_news_en/channels/39/TalkTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/39/TalkTV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Joy News</td><td> <img src="zz_news_en/channels/40/JoyNews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/40/Joy News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Cheddar News</td><td> <img src="zz_news_en/channels/41/CheddarNews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/41/Cheddar News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Bloomberg TV+</td><td> <img src="zz_news_en/channels/42/BloombergTV+.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/42/Bloomberg TV+.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>CNBC</td><td> <img src="zz_news_en/channels/43/CNBC.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/43/CNBC.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Yahoo! Finance</td><td> <img src="zz_news_en/channels/44/Yahoo!Finance.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/44/Yahoo! Finance.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>AccuWeather NOW</td><td> <img src="zz_news_en/channels/45/AccuWeatherNOW.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/45/AccuWeather NOW.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Fox Weather</td><td> <img src="zz_news_en/channels/46/FoxWeather.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/46/Fox Weather.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>KTCA-DT5</td><td> <img src="zz_news_en/channels/47/KTCA-DT5.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/47/KTCA-DT5.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>WeatherNation</td><td> <img src="zz_news_en/channels/48/WeatherNation.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="zz_news_en/channels/48/WeatherNation.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+	  </table>
+	</div>
+   </div>
+</div>
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>

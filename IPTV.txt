@@ -1,0 +1,39 @@
+Questo è il migliore:
+https://github.com/Free-TV/IPTV
+
+Questo ha di tutto, da riordinare
+https://github.com/iptv-org/iptv
+
+https://github.com/Tundrak/IPTV-Italia
+
+
+Li ho trovati con un banale "ispeziona elemento" qualche mese fa, magari possono essere utili a qualcuno:
+RAI 1 (HD): https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803
+RAI 2 (HD): https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=180116
+RAI 3 (HD): https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=180117
+RAI 4 (HD): https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966
+RAI 5 (HD): https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=72382
+RAI News 24: https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1
+RAI Sport + (HD): https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4145
+RAI Sport: https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=179975
+RAI Movie (HD): https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=72381
+RAI Premium (HD): https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=72383
+RAI Yoyo (HD): https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=72384
+RAI Gulp (HD): https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4119
+RAI Storia (HD): https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=24269
+Rai Scuola (HD): https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=24268 
+
+
+
+sudo apt install vlc-bin
+
+cvlc 'https://fe.tring.al/delta/105/out/u/1200_1.m3u8' --sout '#chromecast' --sout-chromecast-ip=192.168.178.27 --demux-filter=demux_chromecast
+cvlc 'file:///home/andsrv/iptv/raidue.m3u8' --sout '#chromecast' --sout-chromecast-ip=192.168.178.27 --demux-filter=demux_chromecast
+Da provare con la RAI, dove bisogna farsi un file a parte .m3u8
+Magari si fa prima per ogni TV a farsi un file .m3u8
+
+
+cvlc file:///home/andrea/Scaricati/raidue.m3u
+
+
+https://github.com/Free-TV/IPTV/archive/refs/heads/master.zip

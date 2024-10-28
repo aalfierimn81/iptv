@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTVLCOPT:http-user-agent=HbbTV/1.6.1
+https://raw.githubusercontent.com/Alstruit/adaptive-streams/alstruit-10_23_us/streams/us/CNNUSA.us.m3u8

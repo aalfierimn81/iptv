@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  width: calc(600px / 3);
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.responsive {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  max-height: auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h1>italy</h1></div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <a href="germany.html"><li>Germany</li></a>
+      <a href="italy.html"><li>Italy</li></a>
+      <a href="zz_news_en.html"><li>zz_news_en</li></a>
+      <li><form id = "spegniForm" action="spegni.php" method="post"> <button class="button" type="submit" class="button"  name="submit">Spegni</button> </form></li>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-3 menu">
+	<div style="overflow-x: auto;">
+	  <table>
+		<tr>
+		  <th>Channel</th>
+		  <th>Immage</th>
+		  <th>Button</th>
+		</tr>
+		
+<body> 
+<table border="1"> 
+<tr> 
+<td>Rai 1</td><td> <img src="italy/channels/1/Rai1.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/1/Rai 1.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rai 2</td><td> <img src="italy/channels/2/Rai2.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/2/Rai 2.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rai 3</td><td> <img src="italy/channels/3/Rai3.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/3/Rai 3.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rete 4</td><td> <img src="italy/channels/4/Rete4.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/4/Rete 4.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Canale 5</td><td> <img src="italy/channels/5/Canale5.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/5/Canale 5.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Italia 1</td><td> <img src="italy/channels/6/Italia1.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/6/Italia 1.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>La7</td><td> <img src="italy/channels/7/La7.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/7/La7.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TV8</td><td> <img src="italy/channels/8/TV8.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/8/TV8.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Nove</td><td> <img src="italy/channels/9/Nove.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/9/Nove.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>20 Mediaset</td><td> <img src="italy/channels/10/20Mediaset.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/10/20 Mediaset.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rai 4</td><td> <img src="italy/channels/11/Rai4.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/11/Rai 4.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Iris</td><td> <img src="italy/channels/12/Iris.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/12/Iris.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rai 5</td><td> <img src="italy/channels/13/Rai5.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/13/Rai 5.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rai Movie</td><td> <img src="italy/channels/14/RaiMovie.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/14/Rai Movie.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rai Premium</td><td> <img src="italy/channels/15/RaiPremium.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/15/Rai Premium.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Cielo TV</td><td> <img src="italy/channels/16/CieloTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/16/Cielo TV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>27 Twentyseven</td><td> <img src="italy/channels/17/27Twentyseven.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/17/27 Twentyseven.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TV 2000</td><td> <img src="italy/channels/18/TV2000.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/18/TV 2000.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>La7d</td><td> <img src="italy/channels/19/La7d.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/19/La7d.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>La 5</td><td> <img src="italy/channels/20/La5.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/20/La 5.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Real Time</td><td> <img src="italy/channels/21/RealTime.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/21/Real Time.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>QVC</td><td> <img src="italy/channels/22/QVC.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/22/QVC.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Food Network</td><td> <img src="italy/channels/23/FoodNetwork.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/23/Food Network.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Cine34</td><td> <img src="italy/channels/24/Cine34.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/24/Cine34.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Focus</td><td> <img src="italy/channels/25/Focus.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/25/Focus.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RTL 102.5</td><td> <img src="italy/channels/26/RTL102.5.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/26/RTL 102.5.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Warner TV</td><td> <img src="italy/channels/27/WarnerTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/27/Warner TV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Giallo</td><td> <img src="italy/channels/28/Giallo.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/28/Giallo.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Top Crime</td><td> <img src="italy/channels/29/TopCrime.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/29/Top Crime.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>BOING</td><td> <img src="italy/channels/30/BOING.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/30/BOING.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>K2</td><td> <img src="italy/channels/31/K2.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/31/K2.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rai Gulp</td><td> <img src="italy/channels/32/RaiGulp.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/32/Rai Gulp.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rai YoYo</td><td> <img src="italy/channels/33/RaiYoYo.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/33/Rai YoYo.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Frisbee</td><td> <img src="italy/channels/34/Frisbee.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/34/Frisbee.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Cartoonito</td><td> <img src="italy/channels/35/Cartoonito.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/35/Cartoonito.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Super!</td><td> <img src="italy/channels/36/Super!.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/36/Super!.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rai News 24</td><td> <img src="italy/channels/37/RaiNews24.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/37/Rai News 24.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Italia 2</td><td> <img src="italy/channels/38/Italia2.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/38/Italia 2.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Sky TG24</td><td> <img src="italy/channels/39/SkyTG24.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/39/Sky TG24.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TGCOM 24</td><td> <img src="italy/channels/40/TGCOM24.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/40/TGCOM 24.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>DMAX</td><td> <img src="italy/channels/41/DMAX.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/41/DMAX.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rai Storia</td><td> <img src="italy/channels/42/RaiStoria.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/42/Rai Storia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Mediaset Extra</td><td> <img src="italy/channels/43/MediasetExtra.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/43/Mediaset Extra.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>HGTV   Home & Garden Tv</td><td> <img src="italy/channels/44/HGTVHome&GardenTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/44/HGTV   Home & Garden Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rai Scuola</td><td> <img src="italy/channels/45/RaiScuola.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/45/Rai Scuola.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rai Sport</td><td> <img src="italy/channels/46/RaiSport.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/46/Rai Sport.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Motor Trend</td><td> <img src="italy/channels/47/MotorTrend.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/47/Motor Trend.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Sportitalia Plus</td><td> <img src="italy/channels/48/SportitaliaPlus.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/48/Sportitalia Plus.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Travel TV</td><td> <img src="italy/channels/49/TravelTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/49/Travel TV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Donna TV</td><td> <img src="italy/channels/50/DonnaTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/50/Donna TV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>SuperTennis</td><td> <img src="italy/channels/51/SuperTennis.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/51/SuperTennis.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Alma TV</td><td> <img src="italy/channels/52/AlmaTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/52/Alma TV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio 105 TV</td><td> <img src="italy/channels/53/Radio105TV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/53/Radio 105 TV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>R101 TV</td><td> <img src="italy/channels/54/R101TV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/54/R101 TV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Deejay TV</td><td> <img src="italy/channels/55/DeejayTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/55/Deejay TV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RadioItaliaTV</td><td> <img src="italy/channels/56/RadioItaliaTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/56/RadioItaliaTV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio KISS KISS TV</td><td> <img src="italy/channels/57/RadioKISSKISSTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/57/Radio KISS KISS TV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rai Radio 2 Visual Radio</td><td> <img src="italy/channels/58/RaiRadio2VisualRadio.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/58/Rai Radio 2 Visual Radio.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RTL 102.5 News</td><td> <img src="italy/channels/59/RTL102.5News.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/59/RTL 102.5 News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RadioFreccia</td><td> <img src="italy/channels/60/RadioFreccia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/60/RadioFreccia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RDS Social TV</td><td> <img src="italy/channels/61/RDSSocialTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/61/RDS Social TV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio ZETA</td><td> <img src="italy/channels/62/RadioZETA.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/62/Radio ZETA.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio TV Serie A con RDS</td><td> <img src="italy/channels/63/RadioTVSerieAconRDS.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/63/Radio TV Serie A con RDS.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Gold TV Sat</td><td> <img src="italy/channels/64/GoldTVSat.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/64/Gold TV Sat.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Sportitalia SOLOCALCIO</td><td> <img src="italy/channels/65/SportitaliaSOLOCALCIO.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/65/Sportitalia SOLOCALCIO.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>BIKE</td><td> <img src="italy/channels/66/BIKE.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/66/BIKE.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Montecarlo TV</td><td> <img src="italy/channels/67/RadioMontecarloTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/67/Radio Montecarlo TV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Virgin Radio TV</td><td> <img src="italy/channels/68/VirginRadioTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/68/Virgin Radio TV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Senato TV</td><td> <img src="italy/channels/69/SenatoTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/69/Senato TV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Camera dei Deputati</td><td> <img src="italy/channels/70/CameradeiDeputati.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/70/Camera dei Deputati.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rai 4K</td><td> <img src="italy/channels/71/Rai4K.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/71/Rai 4K.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>UniNettuno University TV</td><td> <img src="italy/channels/72/UniNettunoUniversityTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/72/UniNettuno University TV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>111 Tv</td><td> <img src="italy/channels/73/111Tv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/73/111 Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>12 Tv Parma</td><td> <img src="italy/channels/74/12TvParma.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/74/12 Tv Parma.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>4 You Tv</td><td> <img src="italy/channels/75/4YouTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/75/4 You Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Abc Tv</td><td> <img src="italy/channels/76/AbcTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/76/Abc Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>AB Channel</td><td> <img src="italy/channels/77/ABChannel.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/77/AB Channel.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Alpauno</td><td> <img src="italy/channels/78/Alpauno.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/78/Alpauno.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Alto Adige Tv</td><td> <img src="italy/channels/79/AltoAdigeTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/79/Alto Adige Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Antenna 2 Bergamo</td><td> <img src="italy/channels/80/Antenna2Bergamo.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/80/Antenna 2 Bergamo.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Antenna 3 Massa</td><td> <img src="italy/channels/81/Antenna3Massa.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/81/Antenna 3 Massa.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Antenna 3 Veneto Nord Est</td><td> <img src="italy/channels/82/Antenna3VenetoNordEst.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/82/Antenna 3 Veneto Nord Est.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Antenna Sud</td><td> <img src="italy/channels/83/AntennaSud.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/83/Antenna Sud.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Antenna Sud Extra</td><td> <img src="italy/channels/84/AntennaSudExtra.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/84/Antenna Sud Extra.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Aristanis SuperTv</td><td> <img src="italy/channels/85/AristanisSuperTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/85/Aristanis SuperTv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Arte Network Orler</td><td> <img src="italy/channels/86/ArteNetworkOrler.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/86/Arte Network Orler.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Aurora Arte</td><td> <img src="italy/channels/87/AuroraArte.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/87/Aurora Arte.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Azzurra Tv Vco</td><td> <img src="italy/channels/88/AzzurraTvVco.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/88/Azzurra Tv Vco.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Basilicata 1 Tv</td><td> <img src="italy/channels/89/Basilicata1Tv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/89/Basilicata 1 Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Bergamo Tv</td><td> <img src="italy/channels/90/BergamoTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/90/Bergamo Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>BOM Channel</td><td> <img src="italy/channels/91/BOMChannel.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/91/BOM Channel.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>ByoBlu</td><td> <img src="italy/channels/92/ByoBlu.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/92/ByoBlu.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Cafe Tv 24</td><td> <img src="italy/channels/93/CafeTv24.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/93/Cafe Tv 24.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Calabria Uno Tv</td><td> <img src="italy/channels/94/CalabriaUnoTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/94/Calabria Uno Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Calabria tv</td><td> <img src="italy/channels/95/Calabriatv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/95/Calabria tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Canale 10</td><td> <img src="italy/channels/96/Canale10.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/96/Canale 10.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Canale 2</td><td> <img src="italy/channels/97/Canale2.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/97/Canale 2.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Canale 21</td><td> <img src="italy/channels/98/Canale21.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/98/Canale 21.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Canale 21 Extra</td><td> <img src="italy/channels/99/Canale21Extra.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/99/Canale 21 Extra.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Canale 7</td><td> <img src="italy/channels/100/Canale7.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/100/Canale 7.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Canale 74 Sicilia</td><td> <img src="italy/channels/101/Canale74Sicilia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/101/Canale 74 Sicilia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Canale 8 Campania</td><td> <img src="italy/channels/102/Canale8Campania.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/102/Canale 8 Campania.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Canale Italia</td><td> <img src="italy/channels/103/CanaleItalia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/103/Canale Italia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Carina Tv</td><td> <img src="italy/channels/104/CarinaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/104/Carina Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Casa Italia 53</td><td> <img src="italy/channels/105/CasaItalia53.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/105/Casa Italia 53.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Casa Sanremo Tv</td><td> <img src="italy/channels/106/CasaSanremoTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/106/Casa Sanremo Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Castrovillari Tv</td><td> <img src="italy/channels/107/CastrovillariTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/107/Castrovillari Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Cittaceleste Tv</td><td> <img src="italy/channels/108/CittacelesteTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/108/Cittaceleste Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Company Tv</td><td> <img src="italy/channels/109/CompanyTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/109/Company Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Cremona 1</td><td> <img src="italy/channels/110/Cremona1.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/110/Cremona 1.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Cusano Italia Tv</td><td> <img src="italy/channels/111/CusanoItaliaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/111/Cusano Italia Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Cusano News 7</td><td> <img src="italy/channels/112/CusanoNews7.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/112/Cusano News 7.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Delta Tv</td><td> <img src="italy/channels/113/DeltaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/113/Delta Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Deluxe 139</td><td> <img src="italy/channels/114/Deluxe139.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/114/Deluxe 139.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Di.Tv 80</td><td> <img src="italy/channels/115/Di.Tv80.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/115/Di.Tv 80.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Di.Tv 92</td><td> <img src="italy/channels/116/Di.Tv92.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/116/Di.Tv 92.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Digital Tv7 Benevento</td><td> <img src="italy/channels/117/DigitalTv7Benevento.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/117/Digital Tv7 Benevento.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Donna Shopping Tv</td><td> <img src="italy/channels/118/DonnaShoppingTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/118/Donna Shopping Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>E'live Brescia Tv</td><td> <img src="italy/channels/119/E'liveBresciaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/119/E'live Brescia Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Easy Tv Canale 190</td><td> <img src="italy/channels/120/EasyTvCanale190.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/120/Easy Tv Canale 190.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Entella Tv</td><td> <img src="italy/channels/121/EntellaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/121/Entella Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>EQUtv</td><td> <img src="italy/channels/122/EQUtv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/122/EQUtv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Equos Tv</td><td> <img src="italy/channels/123/EquosTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/123/Equos Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Espansione Tv</td><td> <img src="italy/channels/124/EspansioneTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/124/Espansione Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Esperia Tv</td><td> <img src="italy/channels/125/EsperiaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/125/Esperia Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Etna Espresso Channel</td><td> <img src="italy/channels/126/EtnaEspressoChannel.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/126/Etna Espresso Channel.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv Marche</td><td> <img src="italy/channels/127/TvMarche.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/127/Tv Marche.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv Rete7</td><td> <img src="italy/channels/128/TvRete7.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/128/Tv Rete7.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv Umbria</td><td> <img src="italy/channels/129/TvUmbria.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/129/Tv Umbria.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Euro Tv</td><td> <img src="italy/channels/130/EuroTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/130/Euro Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Extra Tv</td><td> <img src="italy/channels/131/ExtraTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/131/Extra Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>FM Tv Marche</td><td> <img src="italy/channels/132/FMTvMarche.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/132/FM Tv Marche.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Fano Tv</td><td> <img src="italy/channels/133/FanoTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/133/Fano Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Fascino Tv</td><td> <img src="italy/channels/134/FascinoTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/134/Fascino Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>GRP Televisione</td><td> <img src="italy/channels/135/GRPTelevisione.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/135/GRP Televisione.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>GarganoTv</td><td> <img src="italy/channels/136/GarganoTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/136/GarganoTv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Giornale Radio Tv</td><td> <img src="italy/channels/137/GiornaleRadioTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/137/Giornale Radio Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Giovanni Paolo Tv</td><td> <img src="italy/channels/138/GiovanniPaoloTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/138/Giovanni Paolo Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Globus Television</td><td> <img src="italy/channels/139/GlobusTelevision.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/139/Globus Television.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Gold Tv</td><td> <img src="italy/channels/140/GoldTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/140/Gold Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>GO-TV Channel</td><td> <img src="italy/channels/141/GO-TVChannel.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/141/GO-TV Channel.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>GS Channel</td><td> <img src="italy/channels/142/GSChannel.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/142/GS Channel.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Icaro Tv Rimini</td><td> <img src="italy/channels/143/IcaroTvRimini.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/143/Icaro Tv Rimini.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Idea Plus</td><td> <img src="italy/channels/144/IdeaPlus.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/144/Idea Plus.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Italia 2 Tv</td><td> <img src="italy/channels/145/Italia2Tv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/145/Italia 2 Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Italia 7</td><td> <img src="italy/channels/146/Italia7.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/146/Italia 7.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Italia 8 Prestige</td><td> <img src="italy/channels/147/Italia8Prestige.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/147/Italia 8 Prestige.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Italia Channel</td><td> <img src="italy/channels/148/ItaliaChannel.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/148/Italia Channel.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Iunior Tv</td><td> <img src="italy/channels/149/IuniorTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/149/Iunior Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>L'Altro Corriere Tv</td><td> <img src="italy/channels/150/L'AltroCorriereTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/150/L'Altro Corriere Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>La Nuova Tv</td><td> <img src="italy/channels/151/LaNuovaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/151/La Nuova Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>La Tenda Tv</td><td> <img src="italy/channels/152/LaTendaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/152/La Tenda Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>La tr3 Marsala</td><td> <img src="italy/channels/153/Latr3Marsala.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/153/La tr3 Marsala.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>LaC News 24</td><td> <img src="italy/channels/154/LaCNews24.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/154/LaC News 24.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>LaC Tv Calabria</td><td> <img src="italy/channels/155/LaCTvCalabria.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/155/LaC Tv Calabria.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Lab Tv</td><td> <img src="italy/channels/156/LabTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/156/Lab Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Lazio Tv</td><td> <img src="italy/channels/157/LazioTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/157/Lazio Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Le Cronache Lucane Tv</td><td> <img src="italy/channels/158/LeCronacheLucaneTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/158/Le Cronache Lucane Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Lira Tv</td><td> <img src="italy/channels/159/LiraTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/159/Lira Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Lombardia Tv</td><td> <img src="italy/channels/160/LombardiaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/160/Lombardia Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Love in Venice</td><td> <img src="italy/channels/161/LoveinVenice.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/161/Love in Venice.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Lucania Tv</td><td> <img src="italy/channels/162/LucaniaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/162/Lucania Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Made in BO</td><td> <img src="italy/channels/163/MadeinBO.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/163/Made in BO.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Maria Vision</td><td> <img src="italy/channels/164/MariaVision.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/164/Maria Vision.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Matrix Tv</td><td> <img src="italy/channels/165/MatrixTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/165/Matrix Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Mediterranea Tv</td><td> <img src="italy/channels/166/MediterraneaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/166/Mediterranea Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Medjugorje Italia Tv</td><td> <img src="italy/channels/167/MedjugorjeItaliaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/167/Medjugorje Italia Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Medjugorje Tv Puglia</td><td> <img src="italy/channels/168/MedjugorjeTvPuglia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/168/Medjugorje Tv Puglia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Minformo Tv</td><td> <img src="italy/channels/169/MinformoTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/169/Minformo Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Motori Tv</td><td> <img src="italy/channels/170/MotoriTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/170/Motori Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>NTI Canale 271</td><td> <img src="italy/channels/171/NTICanale271.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/171/NTI Canale 271.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>News24 City</td><td> <img src="italy/channels/172/News24City.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/172/News24 City.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Nuova TV Nazionale</td><td> <img src="italy/channels/173/NuovaTVNazionale.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/173/Nuova TV Nazionale.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Nuova Tv 1</td><td> <img src="italy/channels/174/NuovaTv1.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/174/Nuova Tv 1.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Nuova Tv 2</td><td> <img src="italy/channels/175/NuovaTv2.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/175/Nuova Tv 2.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Nuvola Tv</td><td> <img src="italy/channels/176/NuvolaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/176/Nuvola Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Odeon 24</td><td> <img src="italy/channels/177/Odeon24.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/177/Odeon 24.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Ofanto Tv</td><td> <img src="italy/channels/178/OfantoTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/178/Ofanto Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Onda Novara Tv</td><td> <img src="italy/channels/179/OndaNovaraTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/179/Onda Novara Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Onda Tv Sicilia</td><td> <img src="italy/channels/180/OndaTvSicilia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/180/Onda Tv Sicilia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Onda Web Radio</td><td> <img src="italy/channels/181/OndaWebRadio.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/181/Onda Web Radio.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Ora Tv</td><td> <img src="italy/channels/182/OraTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/182/Ora Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Orler Tv</td><td> <img src="italy/channels/183/OrlerTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/183/Orler Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Otto Channel</td><td> <img src="italy/channels/184/OttoChannel.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/184/Otto Channel.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Padre Pio Tv</td><td> <img src="italy/channels/185/PadrePioTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/185/Padre Pio Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Paradise Tv</td><td> <img src="italy/channels/186/ParadiseTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/186/Paradise Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Parole di Vita</td><td> <img src="italy/channels/187/ParolediVita.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/187/Parole di Vita.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Partenope Tv</td><td> <img src="italy/channels/188/PartenopeTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/188/Partenope Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Peer Tv Alto Adige</td><td> <img src="italy/channels/189/PeerTvAltoAdige.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/189/Peer Tv Alto Adige.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Pop Tv</td><td> <img src="italy/channels/190/PopTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/190/Pop Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Prima Tv Napoli</td><td> <img src="italy/channels/191/PrimaTvNapoli.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/191/Prima Tv Napoli.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Prima Tv Sicilia</td><td> <img src="italy/channels/192/PrimaTvSicilia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/192/Prima Tv Sicilia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>PrimaFREE</td><td> <img src="italy/channels/193/PrimaFREE.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/193/PrimaFREE.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Primantenna Torino</td><td> <img src="italy/channels/194/" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/194/Primantenna Torino.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Primocanale</td><td> <img src="italy/channels/195/Primocanale.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/195/Primocanale.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Promovideo Tv</td><td> <img src="italy/channels/196/PromovideoTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/196/Promovideo Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Quarto Canale Flegreo</td><td> <img src="italy/channels/197/QuartoCanaleFlegreo.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/197/Quarto Canale Flegreo.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio 3M InBlu</td><td> <img src="italy/channels/198/Radio3MInBlu.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/198/Radio 3M InBlu.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio 51 Tv</td><td> <img src="italy/channels/199/Radio51Tv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/199/Radio 51 Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Birikina Tv</td><td> <img src="italy/channels/200/RadioBirikinaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/200/Radio Birikina Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Bruno Tv</td><td> <img src="italy/channels/201/RadioBrunoTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/201/Radio Bruno Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Ibiza</td><td> <img src="italy/channels/202/RadioIbiza.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/202/Radio Ibiza.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Immagine Tv</td><td> <img src="italy/channels/203/RadioImmagineTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/203/Radio Immagine Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Italia Cina Tv</td><td> <img src="italy/channels/204/RadioItaliaCinaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/204/Radio Italia Cina Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Libert</td><td> <img src="italy/channels/205/RadioLibert.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/205/Radio Libert.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio m2o Tv</td><td> <img src="italy/channels/206/Radiom2oTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/206/Radio m2o Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Monte Kronio Tv (R.M.K.)</td><td> <img src="italy/channels/207/RadioMonteKronioTv(R.M.K.).png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/207/Radio Monte Kronio Tv (R.M.K.).m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Norba Tv</td><td> <img src="italy/channels/208/RadioNorbaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/208/Radio Norba Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Piter Pan Tv</td><td> <img src="italy/channels/209/RadioPiterPanTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/209/Radio Piter Pan Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Radio Tv</td><td> <img src="italy/channels/210/RadioRadioTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/210/Radio Radio Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Radiosa Tv</td><td> <img src="italy/channels/211/RadioRadiosaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/211/Radio Radiosa Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Roma</td><td> <img src="italy/channels/212/RadioRoma.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/212/Radio Roma.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Roma Television</td><td> <img src="italy/channels/213/RadioRomaTelevision.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/213/Radio Roma Television.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Ran Friul</td><td> <img src="italy/channels/214/RanFriul.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/214/Ran Friul.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RDE Tv</td><td> <img src="italy/channels/215/RDETv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/215/RDE Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Reggio Tv</td><td> <img src="italy/channels/216/ReggioTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/216/Reggio Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rei Tv</td><td> <img src="italy/channels/217/ReiTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/217/Rei Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rete 55</td><td> <img src="italy/channels/218/Rete55.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/218/Rete 55.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rete 8 Vga</td><td> <img src="italy/channels/219/Rete8Vga.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/219/Rete 8 Vga.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rete 8</td><td> <img src="italy/channels/220/Rete8.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/220/Rete 8.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rete 8 Sport</td><td> <img src="italy/channels/221/Rete8Sport.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/221/Rete 8 Sport.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rete Biella Tv</td><td> <img src="italy/channels/222/ReteBiellaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/222/Rete Biella Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rete Mia</td><td> <img src="italy/channels/223/ReteMia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/223/Rete Mia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rete Oro Tv</td><td> <img src="italy/channels/224/ReteOroTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/224/Rete Oro Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rete Sole</td><td> <img src="italy/channels/225/ReteSole.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/225/Rete Sole.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rete Tv Italia</td><td> <img src="italy/channels/226/ReteTvItalia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/226/Rete Tv Italia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rete Veneta</td><td> <img src="italy/channels/227/ReteVeneta.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/227/Rete Veneta.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Roma Tv 82</td><td> <img src="italy/channels/228/RomaTv82.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/228/Roma Tv 82.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rossini Tv</td><td> <img src="italy/channels/229/RossiniTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/229/Rossini Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RTC Quarta Rete</td><td> <img src="italy/channels/230/RTCQuartaRete.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/230/RTC Quarta Rete.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RTC Telecalabria</td><td> <img src="italy/channels/231/RTCTelecalabria.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/231/RTC Telecalabria.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RTI Calabria</td><td> <img src="italy/channels/232/RTICalabria.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/232/RTI Calabria.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RTL 102.5 + Plus</td><td> <img src="italy/channels/233/RTL102.5+Plus.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/233/RTL 102.5 + Plus.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RTM Manduria</td><td> <img src="italy/channels/234/RTMManduria.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/234/RTM Manduria.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RTR99 Tv</td><td> <img src="italy/channels/235/RTR99Tv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/235/RTR99 Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rtp Tv</td><td> <img src="italy/channels/236/RtpTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/236/Rtp Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rttr</td><td> <img src="italy/channels/237/Rttr.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/237/Rttr.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rtv 38 Toscana</td><td> <img src="italy/channels/238/Rtv38Toscana.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/238/Rtv 38 Toscana.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>SL 48 Tv</td><td> <img src="italy/channels/239/SL48Tv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/239/SL 48 Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>ST Europe Channel</td><td> <img src="italy/channels/240/STEuropeChannel.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/240/ST Europe Channel.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Sardegna 1</td><td> <img src="italy/channels/241/Sardegna1.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/241/Sardegna 1.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Set Tv Cilento</td><td> <img src="italy/channels/242/SetTvCilento.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/242/Set Tv Cilento.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Sesta Rete</td><td> <img src="italy/channels/243/SestaRete.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/243/Sesta Rete.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Sicilia 24 Tv</td><td> <img src="italy/channels/244/Sicilia24Tv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/244/Sicilia 24 Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Sicilia Tv</td><td> <img src="italy/channels/245/SiciliaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/245/Sicilia Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Sienatv</td><td> <img src="italy/channels/246/Sienatv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/246/Sienatv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Sophia Tv</td><td> <img src="italy/channels/247/SophiaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/247/Sophia Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Stiletv</td><td> <img src="italy/channels/248/Stiletv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/248/Stiletv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Super J Tv</td><td> <img src="italy/channels/249/SuperJTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/249/Super J Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Super Six</td><td> <img src="italy/channels/250/SuperSix.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/250/Super Six.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Supertv</td><td> <img src="italy/channels/251/Supertv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/251/Supertv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>T9</td><td> <img src="italy/channels/252/T9.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/252/T9.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TRC Santeramo</td><td> <img src="italy/channels/253/TRCSanteramo.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/253/TRC Santeramo.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TRL Tele Radio Leo</td><td> <img src="italy/channels/254/TRLTeleRadioLeo.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/254/TRL Tele Radio Leo.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TSD Tv Arezzo(Tele San Domenico)</td><td> <img src="italy/channels/255/TSDTvArezzo(TeleSanDomenico).png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/255/TSD Tv Arezzo(Tele San Domenico).m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TVL (TV Libera Pistoia)</td><td> <img src="italy/channels/256/TVL(TVLiberaPistoia).png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/256/TVL (TV Libera Pistoia).m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tcf Tv</td><td> <img src="italy/channels/257/TcfTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/257/Tcf Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tci</td><td> <img src="italy/channels/258/Tci.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/258/Tci.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Teatro Tv</td><td> <img src="italy/channels/259/TeatroTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/259/Teatro Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele A</td><td> <img src="italy/channels/260/TeleA.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/260/Tele A.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Abruzzo Tv</td><td> <img src="italy/channels/261/TeleAbruzzoTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/261/Tele Abruzzo Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Acras</td><td> <img src="italy/channels/262/TeleAcras.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/262/Tele Acras.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Arena</td><td> <img src="italy/channels/263/TeleArena.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/263/Tele Arena.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Bari</td><td> <img src="italy/channels/264/TeleBari.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/264/Tele Bari.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Belluno</td><td> <img src="italy/channels/265/TeleBelluno.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/265/Tele Belluno.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Boario</td><td> <img src="italy/channels/266/TeleBoario.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/266/Tele Boario.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Bruzzano</td><td> <img src="italy/channels/267/TeleBruzzano.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/267/Tele Bruzzano.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Chiara</td><td> <img src="italy/channels/268/TeleChiara.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/268/Tele Chiara.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telecolor</td><td> <img src="italy/channels/269/Telecolor.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/269/Telecolor.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Cupole</td><td> <img src="italy/channels/270/TeleCupole.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/270/Tele Cupole.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Estense</td><td> <img src="italy/channels/271/TeleEstense.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/271/Tele Estense.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Foggia</td><td> <img src="italy/channels/272/TeleFoggia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/272/Tele Foggia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Friuli</td><td> <img src="italy/channels/273/TeleFriuli.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/273/Tele Friuli.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Ischia</td><td> <img src="italy/channels/274/TeleIschia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/274/Tele Ischia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Jonio</td><td> <img src="italy/channels/275/TeleJonio.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/275/Tele Jonio.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Liberta' HD</td><td> <img src="italy/channels/276/TeleLiberta'HD.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/276/Tele Liberta' HD.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Liguria Sud</td><td> <img src="italy/channels/277/TeleLiguriaSud.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/277/Tele Liguria Sud.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Mantova</td><td> <img src="italy/channels/278/TeleMantova.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/278/Tele Mantova.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Mia</td><td> <img src="italy/channels/279/TeleMia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/279/Tele Mia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Mia Extra</td><td> <img src="italy/channels/280/TeleMiaExtra.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/280/Tele Mia Extra.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Mistretta</td><td> <img src="italy/channels/281/TeleMistretta.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/281/Tele Mistretta.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Molise</td><td> <img src="italy/channels/282/TeleMolise.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/282/Tele Molise.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Nord Genova</td><td> <img src="italy/channels/283/TeleNordGenova.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/283/Tele Nord Genova.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Nostra</td><td> <img src="italy/channels/284/TeleNostra.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/284/Tele Nostra.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Occidente</td><td> <img src="italy/channels/285/TeleOccidente.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/285/Tele Occidente.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Oltre</td><td> <img src="italy/channels/286/TeleOltre.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/286/Tele Oltre.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele One</td><td> <img src="italy/channels/287/TeleOne.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/287/Tele One.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Pace 1</td><td> <img src="italy/channels/288/TelePace1.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/288/Tele Pace 1.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Pace 2</td><td> <img src="italy/channels/289/TelePace2.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/289/Tele Pace 2.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Pace 3</td><td> <img src="italy/channels/290/TelePace3.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/290/Tele Pace 3.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Pace 4</td><td> <img src="italy/channels/291/TelePace4.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/291/Tele Pace 4.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Pace News</td><td> <img src="italy/channels/292/TelePaceNews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/292/Tele Pace News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Pace Roma</td><td> <img src="italy/channels/293/TelePaceRoma.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/293/Tele Pace Roma.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Pace Trento</td><td> <img src="italy/channels/294/TelePaceTrento.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/294/Tele Pace Trento.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Pace Verona</td><td> <img src="italy/channels/295/TelePaceVerona.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/295/Tele Pace Verona.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Pavia</td><td> <img src="italy/channels/296/TelePavia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/296/Tele Pavia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Pegaso</td><td> <img src="italy/channels/297/TelePegaso.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/297/Tele Pegaso.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Piadena</td><td> <img src="italy/channels/298/TelePiadena.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/298/Tele Piadena.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Pordenone</td><td> <img src="italy/channels/299/TelePordenone.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/299/Tele Pordenone.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Quattro Trieste</td><td> <img src="italy/channels/300/TeleQuattroTrieste.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/300/Tele Quattro Trieste.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Radio Ercolano</td><td> <img src="italy/channels/301/TeleRadioErcolano.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/301/Tele Radio Ercolano.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Radio Orte</td><td> <img src="italy/channels/302/TeleRadioOrte.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/302/Tele Radio Orte.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Radio Sciacca</td><td> <img src="italy/channels/303/TeleRadioSciacca.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/303/Tele Radio Sciacca.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Sirio</td><td> <img src="italy/channels/304/TeleSirio.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/304/Tele Sirio.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Spazio Messina</td><td> <img src="italy/channels/305/TeleSpazioMessina.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/305/Tele Spazio Messina.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Sud Puglia</td><td> <img src="italy/channels/306/TeleSudPuglia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/306/Tele Sud Puglia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Tricolore</td><td> <img src="italy/channels/307/TeleTricolore.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/307/Tele Tricolore.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Tutto</td><td> <img src="italy/channels/308/TeleTutto.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/308/Tele Tutto.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Tutto 2</td><td> <img src="italy/channels/309/TeleTutto2.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/309/Tele Tutto 2.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Tutto 24</td><td> <img src="italy/channels/310/TeleTutto24.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/310/Tele Tutto 24.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Venezia</td><td> <img src="italy/channels/311/TeleVenezia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/311/Tele Venezia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Video Agrigento (T.V.A.)</td><td> <img src="italy/channels/312/TeleVideoAgrigento(T.V.A.).png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/312/Tele Video Agrigento (T.V.A.).m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele8 Tv</td><td> <img src="italy/channels/313/Tele8Tv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/313/Tele8 Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TeleAmbiente</td><td> <img src="italy/channels/314/TeleAmbiente.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/314/TeleAmbiente.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telecampione</td><td> <img src="italy/channels/315/Telecampione.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/315/Telecampione.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telecitt  Padova</td><td> <img src="italy/channels/316/TelecittPadova.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/316/Telecitt  Padova.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telecity Lombardia</td><td> <img src="italy/channels/317/TelecityLombardia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/317/Telecity Lombardia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telecity Piemonte</td><td> <img src="italy/channels/318/TelecityPiemonte.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/318/Telecity Piemonte.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telecity Valle D'Aosta</td><td> <img src="italy/channels/319/TelecityValleD'Aosta.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/319/Telecity Valle D'Aosta.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TeleCostaSmeralda</td><td> <img src="italy/channels/320/TeleCostaSmeralda.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/320/TeleCostaSmeralda.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telegenova</td><td> <img src="italy/channels/321/Telegenova.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/321/Telegenova.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Teleiblea</td><td> <img src="italy/channels/322/Teleiblea.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/322/Teleiblea.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Teleitalia 41</td><td> <img src="italy/channels/323/Teleitalia41.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/323/Teleitalia 41.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telejato</td><td> <img src="italy/channels/324/Telejato.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/324/Telejato.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Teleleonessa</td><td> <img src="italy/channels/325/Teleleonessa.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/325/Teleleonessa.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TeleMajg</td><td> <img src="italy/channels/326/TeleMajg.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/326/TeleMajg.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telenova</td><td> <img src="italy/channels/327/Telenova.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/327/Telenova.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telerama</td><td> <img src="italy/channels/328/Telerama.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/328/Telerama.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TeleRegione</td><td> <img src="italy/channels/329/TeleRegione.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/329/TeleRegione.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TeleRegione Color</td><td> <img src="italy/channels/330/TeleRegioneColor.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/330/TeleRegione Color.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TeleRegione Live</td><td> <img src="italy/channels/331/TeleRegioneLive.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/331/TeleRegione Live.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TeleRent 7Gold</td><td> <img src="italy/channels/332/TeleRent7Gold.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/332/TeleRent 7Gold.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telereporter</td><td> <img src="italy/channels/333/Telereporter.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/333/Telereporter.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Teleromagna</td><td> <img src="italy/channels/334/Teleromagna.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/334/Teleromagna.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Teleromagna 24</td><td> <img src="italy/channels/335/Teleromagna24.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/335/Teleromagna 24.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TeleRomaDue</td><td> <img src="italy/channels/336/TeleRomaDue.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/336/TeleRomaDue.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telesud Trapani</td><td> <img src="italy/channels/337/TelesudTrapani.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/337/Telesud Trapani.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telesveva</td><td> <img src="italy/channels/338/Telesveva.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/338/Telesveva.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Teleuniverso</td><td> <img src="italy/channels/339/Teleuniverso.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/339/Teleuniverso.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Televallo Trapani</td><td> <img src="italy/channels/340/TelevalloTrapani.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/340/Televallo Trapani.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TG Norba 24</td><td> <img src="italy/channels/341/TGNorba24.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/341/TG Norba 24.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TLT Molise</td><td> <img src="italy/channels/342/TLTMolise.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/342/TLT Molise.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tremedia Tv</td><td> <img src="italy/channels/343/TremediaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/343/Tremedia Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Trentino Tv</td><td> <img src="italy/channels/344/TrentinoTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/344/Trentino Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tuscia Sabina 2000Tv</td><td> <img src="italy/channels/345/TusciaSabina2000Tv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/345/Tuscia Sabina 2000Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv 12</td><td> <img src="italy/channels/346/Tv12.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/346/Tv 12.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv Campi Flegrei</td><td> <img src="italy/channels/347/TvCampiFlegrei.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/347/Tv Campi Flegrei.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv Luna Napoli</td><td> <img src="italy/channels/348/TvLunaNapoli.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/348/Tv Luna Napoli.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv Prato</td><td> <img src="italy/channels/349/TvPrato.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/349/Tv Prato.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv Qui Modena</td><td> <img src="italy/channels/350/TvQuiModena.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/350/Tv Qui Modena.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv Uno</td><td> <img src="italy/channels/351/TvUno.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/351/Tv Uno.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv Yes</td><td> <img src="italy/channels/352/TvYes.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/352/Tv Yes.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tva Vicenza</td><td> <img src="italy/channels/353/TvaVicenza.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/353/Tva Vicenza.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tvm Palermo</td><td> <img src="italy/channels/354/TvmPalermo.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/354/Tvm Palermo.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tvr Xenon</td><td> <img src="italy/channels/355/TvrXenon.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/355/Tvr Xenon.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tvrs Tv</td><td> <img src="italy/channels/356/TvrsTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/356/Tvrs Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Umbria+ TRT</td><td> <img src="italy/channels/357/Umbria+TRT.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/357/Umbria+ TRT.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Umbria Tv</td><td> <img src="italy/channels/358/UmbriaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/358/Umbria Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Uno Tv</td><td> <img src="italy/channels/359/UnoTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/359/Uno Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Uno4 Tv</td><td> <img src="italy/channels/360/Uno4Tv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/360/Uno4 Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Vera Tv</td><td> <img src="italy/channels/361/VeraTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/361/Vera Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>VB33</td><td> <img src="italy/channels/362/VB33.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/362/VB33.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Video Calabria</td><td> <img src="italy/channels/363/VideoCalabria.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/363/Video Calabria.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Video Mediterraneo</td><td> <img src="italy/channels/364/VideoMediterraneo.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/364/Video Mediterraneo.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Video Nola</td><td> <img src="italy/channels/365/VideoNola.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/365/Video Nola.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Video Regione Sicilia</td><td> <img src="italy/channels/366/VideoRegioneSicilia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/366/Video Regione Sicilia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Video Star Tv Sicilia</td><td> <img src="italy/channels/367/VideoStarTvSicilia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/367/Video Star Tv Sicilia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Video Touring Tv</td><td> <img src="italy/channels/368/VideoTouringTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/368/Video Touring Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Videolina</td><td> <img src="italy/channels/369/" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/369/Videolina.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Videonovara</td><td> <img src="italy/channels/370/Videonovara.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/370/Videonovara.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Videotelecarnia</td><td> <img src="italy/channels/371/Videotelecarnia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/371/Videotelecarnia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Vintage Radio Tv</td><td> <img src="italy/channels/372/VintageRadioTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/372/Vintage Radio Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Vuemme Tv</td><td> <img src="italy/channels/373/VuemmeTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/373/Vuemme Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Webcom Tv</td><td> <img src="italy/channels/374/WebcomTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/374/Webcom Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>WLTV</td><td> <img src="italy/channels/375/WLTV.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/375/WLTV.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Yvii Tv</td><td> <img src="italy/channels/376/YviiTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/376/Yvii Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Zerouno Tv Music</td><td> <img src="italy/channels/377/ZerounoTvMusic.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/377/Zerouno Tv Music.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Zerouno Tv News</td><td> <img src="italy/channels/378/ZerounoTvNews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/378/Zerouno Tv News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Colonna Tv</td><td> <img src="italy/channels/379/RadioColonnaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/379/Radio Colonna Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Euronews Italian</td><td> <img src="italy/channels/380/EuronewsItalian.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/380/Euronews Italian.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TRM h24</td><td> <img src="italy/channels/381/TRMh24.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/381/TRM h24.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Teleroma 56</td><td> <img src="italy/channels/382/Teleroma56.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/382/Teleroma 56.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TeleRadioStereo</td><td> <img src="italy/channels/383/TeleRadioStereo.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/383/TeleRadioStereo.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>GM24</td><td> <img src="italy/channels/384/GM24.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/384/GM24.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>VH1</td><td> <img src="italy/channels/385/VH1.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/385/VH1.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RAI Italia America</td><td> <img src="italy/channels/386/RAIItaliaAmerica.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/386/RAI Italia America.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>RAI Italia Asia</td><td> <img src="italy/channels/387/RAIItaliaAsia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/387/RAI Italia Asia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Explorer HD Channel</td><td> <img src="italy/channels/388/ExplorerHDChannel.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/388/Explorer HD Channel.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Class CNBC</td><td> <img src="italy/channels/389/ClassCNBC.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/389/Class CNBC.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>BFC</td><td> <img src="italy/channels/390/BFC.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/390/BFC.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Antenna Sicilia</td><td> <img src="italy/channels/391/AntennaSicilia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/391/Antenna Sicilia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Antenna Sud Sport</td><td> <img src="italy/channels/392/AntennaSudSport.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/392/Antenna Sud Sport.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Antenna Sud Sport 2</td><td> <img src="italy/channels/393/AntennaSudSport2.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/393/Antenna Sud Sport 2.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Apulia Web Tv</td><td> <img src="italy/channels/394/ApuliaWebTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/394/Apulia Web Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Canale 58</td><td> <img src="italy/channels/395/Canale58.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/395/Canale 58.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Canale Uno Tiv</td><td> <img src="italy/channels/396/CanaleUnoTiv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/396/Canale Uno Tiv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Cilento Channel</td><td> <img src="italy/channels/397/CilentoChannel.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/397/Cilento Channel.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>HUB Tv</td><td> <img src="italy/channels/398/HUBTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/398/HUB Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>InSiciliaTv</td><td> <img src="italy/channels/399/InSiciliaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/399/InSiciliaTv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>La Tua Tv</td><td> <img src="italy/channels/400/LaTuaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/400/La Tua Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Media Tv</td><td> <img src="italy/channels/401/MediaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/401/Media Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>New Signal Tv Genova</td><td> <img src="italy/channels/402/NewSignalTvGenova.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/402/New Signal Tv Genova.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>NSL</td><td> <img src="italy/channels/403/NSL.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/403/NSL.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>One Tv Emilia</td><td> <img src="italy/channels/404/OneTvEmilia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/404/One Tv Emilia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Prima Tivv</td><td> <img src="italy/channels/405/PrimaTivv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/405/Prima Tivv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>R+ News Abruzzo</td><td> <img src="italy/channels/406/R+NewsAbruzzo.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/406/R+ News Abruzzo.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Radio Tele Tebe</td><td> <img src="italy/channels/407/RadioTeleTebe.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/407/Radio Tele Tebe.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Reklama Tv</td><td> <img src="italy/channels/408/ReklamaTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/408/Reklama Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rete 7 Tv</td><td> <img src="italy/channels/409/Rete7Tv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/409/Rete 7 Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rete Chiara</td><td> <img src="italy/channels/410/ReteChiara.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/410/Rete Chiara.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Rtc Targato Napoli</td><td> <img src="italy/channels/411/RtcTargatoNapoli.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/411/Rtc Targato Napoli.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>SiracusaLive Tv</td><td> <img src="italy/channels/412/SiracusaLiveTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/412/SiracusaLive Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Studio 100</td><td> <img src="italy/channels/413/Studio100.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/413/Studio 100.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TSE Uno (Tele Scout Europa)</td><td> <img src="italy/channels/414/TSEUno(TeleScoutEuropa).png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/414/TSE Uno (Tele Scout Europa).m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Teleblu</td><td> <img src="italy/channels/415/Teleblu.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/415/Teleblu.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telecolor International</td><td> <img src="italy/channels/416/TelecolorInternational.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/416/Telecolor International.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TeleRomaUno</td><td> <img src="italy/channels/417/TeleRomaUno.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/417/TeleRomaUno.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Telesardegna</td><td> <img src="italy/channels/418/Telesardegna.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/418/Telesardegna.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tevere Tv</td><td> <img src="italy/channels/419/TevereTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/419/Tevere Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele ArgentoMagic Tv</td><td> <img src="italy/channels/420/TeleArgentoMagicTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/420/Tele ArgentoMagic Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Club Italia</td><td> <img src="italy/channels/421/TeleClubItalia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/421/Tele Club Italia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Clusone Bergamo</td><td> <img src="italy/channels/422/TeleClusoneBergamo.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/422/Tele Clusone Bergamo.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Gela</td><td> <img src="italy/channels/423/TeleGela.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/423/Tele Gela.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Granda</td><td> <img src="italy/channels/424/TeleGranda.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/424/Tele Granda.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Lazio Nord</td><td> <img src="italy/channels/425/TeleLazioNord.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/425/Tele Lazio Nord.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Monteneve</td><td> <img src="italy/channels/426/TeleMonteneve.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/426/Tele Monteneve.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Nord Est</td><td> <img src="italy/channels/427/TeleNordEst.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/427/Tele Nord Est.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Prima</td><td> <img src="italy/channels/428/TelePrima.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/428/Tele Prima.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tele Radio Studio 5</td><td> <img src="italy/channels/429/TeleRadioStudio5.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/429/Tele Radio Studio 5.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tris Siracusa</td><td> <img src="italy/channels/430/TrisSiracusa.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/430/Tris Siracusa.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tsn Lecco</td><td> <img src="italy/channels/431/TsnLecco.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/431/Tsn Lecco.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tsn Tele Sondrio News</td><td> <img src="italy/channels/432/TsnTeleSondrioNews.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/432/Tsn Tele Sondrio News.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tua Channel</td><td> <img src="italy/channels/433/TuaChannel.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/433/Tua Channel.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv 6</td><td> <img src="italy/channels/434/Tv6.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/434/Tv 6.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv7 Azzurra</td><td> <img src="italy/channels/435/Tv7Azzurra.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/435/Tv7 Azzurra.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv7 iReporter</td><td> <img src="italy/channels/436/Tv7iReporter.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/436/Tv7 iReporter.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv7 Triveneta</td><td> <img src="italy/channels/437/Tv7Triveneta.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/437/Tv7 Triveneta.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>TVR Pi  TeleRegione</td><td> <img src="italy/channels/438/TVRPiTeleRegione.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/438/TVR Pi  TeleRegione.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv Campane 1</td><td> <img src="italy/channels/439/TvCampane1.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/439/Tv Campane 1.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Tv Campania Streaming</td><td> <img src="italy/channels/440/TvCampaniaStreaming.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/440/Tv Campania Streaming.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Videostar Tv Lombardia</td><td> <img src="italy/channels/441/VideostarTvLombardia.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/441/Videostar Tv Lombardia.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+<tr> 
+<td>Well Tv</td><td> <img src="italy/channels/442/WellTv.png" class="responsive"> </td><td><form id = "submitForm" action="cambia_canale.php" method="post"><input type="hidden" name="canale" value="italy/channels/442/Well Tv.m3u"> <button type="submit" class="button"  name="submit">Guarda</button> </form></tr> 
+	  </table>
+	</div>
+   </div>
+</div>
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>

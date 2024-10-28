@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTVLCOPT:http-user-agent=HbbTV/1.6.1
+https://bbtv.intvstream.net:3988/hybrid/play.m3u8
